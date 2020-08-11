@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 35: expected statement.
+    "You taking me to the gallows or something?":
+                                                ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Tue Aug 11 14:10:35 2020
