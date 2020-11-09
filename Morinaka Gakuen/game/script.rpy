@@ -23,9 +23,7 @@ label start:
     "However, physically speaking, I have no idea how I got here, in this van."
     "Well, that's not quite true, I know that the guards took my out of my cell, put me in handcuffs and tossed me in the back of said van..."
     "But after that I'm fucking baffled."
-    "There's absolutely no reason I should be here. My sentence isn't remotely over, I'm not twenty, so no adult facility for me..."
-    "...and I was never given the option of parole."
-    "If something in my situation changed, I assume someone would tell me, not put a sack over my head and throw me into a car."
+    "There's absolutely no reason I should be here. My sentence isn't remotely over, and I'm not twenty, so no adult facility transfers for me and I was never given the option of parole. If something in my situation changed, I assume someone would tell me, not put a sack over my head and throw me into a car."
 
     menu:
 

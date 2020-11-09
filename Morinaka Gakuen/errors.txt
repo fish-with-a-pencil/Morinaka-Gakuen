@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 35: expected statement.
-    "You taking me to the gallows or something?":
-                                                ^
+File "game/gui.rpy", line 107: expected expression
+    define gui.name_xpos =
+                          ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Aug 11 14:10:35 2020
+Wed Aug 12 10:06:40 2020

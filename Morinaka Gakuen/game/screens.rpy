@@ -136,7 +136,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/System_00/textbox.png", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos
@@ -145,7 +145,7 @@ style namebox:
     ypos gui.name_ypos
     ysize gui.namebox_height
 
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame("gui/System_00/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
@@ -359,7 +359,19 @@ screen main_menu():
 
     style_prefix "main_menu"
 
-    add gui.main_menu_background
+    imagemap:
+        ground "gui/System_00/main_idle.png"
+        hover "gui/System_00/main_hover.png"
+
+        hotspot (115, 364, 37, 37) action Start()
+        hotspot (343, 319, 37, 37) action ShowMenu("load")
+        hotspot (527, 401, 37, 37) action ShowMenu("preferences")
+        hotspot (818, 307, 37, 37) action ShowMenu("bonus")
+        hotspot (954, 422, 37, 37) action Help()
+        hotspot (1113, 342, 37, 37) action Quit(confirm=False)
+
+
+
 
     ## This empty frame darkens the main menu.
     frame:
@@ -367,7 +379,7 @@ screen main_menu():
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+    ##use navigation
 
     if gui.show_name:
 
@@ -384,28 +396,6 @@ style main_menu_vbox is vbox
 style main_menu_text is gui_text
 style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
-
-style main_menu_frame:
-    xsize 280
-    yfill True
-
-    background "gui/overlay/main_menu.png"
-
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -20
-    xmaximum 800
-    yalign 1.0
-    yoffset -20
-
-style main_menu_text:
-    properties gui.text_properties("main_menu", accent=True)
-
-style main_menu_title:
-    properties gui.text_properties("title")
-
-style main_menu_version:
-    properties gui.text_properties("version")
 
 
 ## Game Menu screen ############################################################

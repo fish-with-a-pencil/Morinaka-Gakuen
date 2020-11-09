@@ -23,14 +23,14 @@ init python:
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#000000'
+define gui.accent_color = '#d4d4d4'
 
 ## The color used for a text button when it is neither selected nor hovered.
 define gui.idle_color = '#aaaaaa'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#888888'
+define gui.idle_small_color = '#d4d4d4'
 
 ## The color that is used for buttons and bars that are hovered.
 define gui.hover_color = '#000000'
@@ -48,8 +48,8 @@ define gui.muted_color = '#666666'
 define gui.hover_muted_color = '#999999'
 
 ## The colors used for dialogue and menu choice text.
-define gui.text_color = '#404040'
-define gui.interface_text_color = '#404040'
+define gui.text_color = '#bdbdbd'
+define gui.interface_text_color = '#bdbdbd'
 
 
 ## Fonts and Font Sizes ########################################################
@@ -99,22 +99,22 @@ define gui.textbox_height = 185
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
-define gui.textbox_yalign = 1.0
+define gui.textbox_yalign = .95
 
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 240
-define gui.name_ypos = 0
+define gui.name_xpos = 152
+define gui.name_ypos = -42
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
-define gui.name_xalign = 0.0
+define gui.name_xalign = 0.5
 
 ## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.
-define gui.namebox_width = None
-define gui.namebox_height = None
+define gui.namebox_width = 304
+define gui.namebox_height = 42
 
 ## The borders of the box containing the character's name, in left, top, right,
 ## bottom order.
@@ -128,15 +128,15 @@ define gui.namebox_tile = False
 ## The placement of dialogue relative to the textbox. These can be a whole
 ## number of pixels relative to the left or top side of the textbox, or 0.5 to
 ## center.
-define gui.dialogue_xpos = 268
-define gui.dialogue_ypos = 50
+define gui.dialogue_xpos = .5
+define gui.dialogue_ypos = .20
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 744
+define gui.dialogue_width = 1100
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
-define gui.dialogue_text_xalign = 0.0
+define gui.dialogue_text_xalign = 0.5
 
 
 ## Buttons #####################################################################
@@ -469,6 +469,3 @@ init python:
 
         gui.nvl_button_width = 1240
         gui.nvl_button_xpos = 20
-
-
-
